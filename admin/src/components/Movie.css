@@ -1,0 +1,29 @@
+.singleMoviePart{
+    width: 50%;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.singleMoviePart{
+    width: 100%;
+}
+
+.singleMoviesPart{
+    width:50%;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:900px){
+    .singleMoviePart{
+        width:80
+    }
+}

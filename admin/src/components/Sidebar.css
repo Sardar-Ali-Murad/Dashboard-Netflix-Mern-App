@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300&family=Handlee&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+.sidebar__Main{
+     border-right: 2px solid gray; 
+     width: 200px; 
+    position: sticky; 
+     bottom: 0; 
+    top: 0;
+     /* top: 0;  */
+     /* overflow-y: scroll;  */
+     margin-right: 20px;
+     padding: 20px;
+     /* position: -webkit-sticky; */
+     min-height: 120vh; 
+     max-height: 100px;
+     /* overflow: auto; */
+     padding: 8px 7px 5px 15px;
+     overflow-x: hidden;
+     margin: 0px 0px 0px 0px;
+     border-radius: 7px;
+    
+}
+
+.Heading{
+    margin-left: 12px;
+}
+
+.section{
+    display: flex;
+    width: 100%;
+    margin: 20px 10px 10px 20px;
+    justify-content: space-around;
+    margin-left: 20px;
+    align-items: center;
+    margin-left: 20px;
+    color: black;
+}
+
+.cointainer{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.AdminHeading{
+    border-bottom: 1px solid;
+}
+
+.black{
+    height: 30px;
+    width: 30px;
+    border: .4px solid white;
+    background-color: black;
+    border-radius: 10px;
+}
+.white{
+    height: 30px;
+    width: 30px;
+    border: .4px solid black;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.boxes{
+    display: flex;
+    margin-left: 30px;
+}
+.sidebar__Main{
+    transition: all 2s linear;
+}
+
+.SideBarProminant{
+    font-family: 'Roboto', sans-serif
+}
+
+
+.SideBarSub{
+    font-family: 'Cormorant Garamond', serif;
+}
+.AdminHeading{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+/* .small__Overflow{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0,.9);
+    position: fixed;
+    display: none;
+    visibility: hidden;
+    z-index: -10;
+} */
+
+
+
+@media screen and (max-width:1200px){
+    .sidebar__Main{
+        /* transform: translateX(-200px); */
+        display: none;
+    }
+    .activeSidebar{
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 120vh; 
+        max-height: 100px;
+        background-color: black;
+        color:white;
+        /* z-index: -120; */
+    }
+    .activeSidebar  .section{
+        color: white;
+    }    
+}
